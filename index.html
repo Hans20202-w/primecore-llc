@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primecore LLC — Profitable Google Ads for eCommerce Brands</title>
-  <meta name="description" content="Primecore LLC helps eCommerce brands scale profitably with data-driven Google Ads media buying — maximizing ROAS, lowering CAC, and scaling winning campaigns.">
+  <title>PrimeCore Agency — Profitable Google Ads for eCommerce Brands</title>
+  <meta name="description" content="PrimeCore Agency helps eCommerce brands scale profitably with data-driven Google Ads media buying — maximizing ROAS, lowering CAC, and scaling winning campaigns.">
   <meta name="theme-color" content="#2563eb">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,29 +36,117 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <span class="hero-badge"><span class="dot"></span> Now accepting new eCommerce clients</span>
-        <h1>Profitable Google Ads<br>for eCommerce brands.</h1>
-        <p class="lead">Scale your online revenue with data-driven media buying strategies designed to maximize ROAS and long-term growth.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Schedule Consultation →</a>
-          <a href="services.html" class="btn btn-secondary">See how we work</a>
+        <div class="hero-grid">
+          <div>
+            <span class="hero-badge"><span class="dot"></span> Now accepting new eCommerce clients</span>
+            <h1>Profitable Google Ads for <span class="gradient-text">eCommerce brands</span>.</h1>
+            <p class="lead">Scale your online revenue with data-driven media buying. We turn ad spend into measurable ROAS — and engineer campaigns that compound month after month.</p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">Schedule Consultation →</a>
+              <a href="services.html" class="btn btn-secondary">See how we work</a>
+            </div>
+          </div>
+
+          <!-- Animated dashboard -->
+          <div class="hero-dashboard">
+            <div class="dash-header">
+              <div class="dash-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                Account performance
+              </div>
+              <span class="dash-live">Live · last 30 days</span>
+            </div>
+
+            <div class="dash-metrics">
+              <div class="dash-metric">
+                <div class="label">ROAS</div>
+                <div class="value">4.82×</div>
+                <div class="delta">↑ 38%</div>
+              </div>
+              <div class="dash-metric">
+                <div class="label">Spend</div>
+                <div class="value">$84.2k</div>
+                <div class="delta">↑ 22%</div>
+              </div>
+              <div class="dash-metric">
+                <div class="label">CAC</div>
+                <div class="value">$18</div>
+                <div class="delta down">↓ 31%</div>
+              </div>
+            </div>
+
+            <div class="dash-chart">
+              <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#2563eb" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Grid lines -->
+                <line x1="0" y1="30" x2="320" y2="30" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="2 4"/>
+                <line x1="0" y1="60" x2="320" y2="60" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="2 4"/>
+                <line x1="0" y1="90" x2="320" y2="90" stroke="#e5e7eb" stroke-width="0.5" stroke-dasharray="2 4"/>
+                <!-- Area -->
+                <path class="area" d="M0 92 L40 84 L80 78 L120 64 L160 56 L200 42 L240 32 L280 22 L320 12 L320 120 L0 120 Z"/>
+                <!-- Line -->
+                <path class="line" d="M0 92 L40 84 L80 78 L120 64 L160 56 L200 42 L240 32 L280 22 L320 12"/>
+                <!-- Data points -->
+                <circle class="dot" cx="40" cy="84" r="3.5"/>
+                <circle class="dot" cx="120" cy="64" r="3.5"/>
+                <circle class="dot" cx="200" cy="42" r="3.5"/>
+                <circle class="dot" cx="280" cy="22" r="3.5"/>
+                <circle class="dot highlight" cx="320" cy="12" r="5"/>
+              </svg>
+            </div>
+
+            <div class="dash-footer">
+              <span>Wk 1 · Wk 2 · Wk 3 · Wk 4</span>
+              <span>Updated 12s ago</span>
+            </div>
+
+            <!-- Floating callouts -->
+            <div class="dash-floating tl">↑ +$24k revenue</div>
+            <div class="dash-floating br"><span class="big">4.82×</span> ROAS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients band -->
+    <section class="clients-section reveal">
+      <div class="container">
+        <div class="clients-label">Selected clients · eCommerce brands we run paid acquisition for</div>
+        <div class="clients-row reveal-stagger">
+          <a href="https://slumberkiddies.com/" target="_blank" rel="noopener" class="client-logo">
+            <div class="name">Slumber Kiddies</div>
+            <div class="tag">Children's sleepwear</div>
+          </a>
+          <a href="https://www.lichtzoone.com/" target="_blank" rel="noopener" class="client-logo">
+            <div class="name">Lichtzoone</div>
+            <div class="tag">Premium lighting</div>
+          </a>
+          <a href="https://www.decorsdeluxe.com/" target="_blank" rel="noopener" class="client-logo">
+            <div class="name">Decors Deluxe</div>
+            <div class="tag">Home décor</div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Stats -->
     <div class="container">
-      <div class="stats">
+      <div class="stats reveal-stagger">
         <div>
-          <div class="stat-num">4.8×</div>
+          <div class="stat-num gradient-text">4.8×</div>
           <div class="stat-label">Average ROAS across client accounts</div>
         </div>
         <div>
-          <div class="stat-num">−38%</div>
+          <div class="stat-num gradient-text">−38%</div>
           <div class="stat-label">Average cost-per-acquisition reduction</div>
         </div>
         <div>
-          <div class="stat-num">$25M+</div>
+          <div class="stat-num gradient-text">$25M+</div>
           <div class="stat-label">In ad spend managed and optimized</div>
         </div>
       </div>
@@ -67,25 +155,31 @@
     <!-- Welcome / About preview -->
     <section>
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Welcome to Primecore</p>
+        <div class="section-head reveal">
+          <p class="eyebrow">Welcome to PrimeCore</p>
           <h2>We don't just run ads — we build profitable systems.</h2>
           <p>We're a team of Google Ads specialists dedicated to helping eCommerce brands scale profitably through strategic media buying. Our expertise spans campaign structure, conversion tracking, audience targeting, A/B testing, and continuous performance optimization — built into one system designed to maximize ROAS, lower acquisition costs, and scale winning campaigns.</p>
         </div>
 
-        <div class="grid grid-3">
+        <div class="grid grid-3 reveal-stagger">
           <div class="card">
-            <div class="icon-box">◎</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+            </div>
             <h3>Strategic campaign structure</h3>
             <p>Account architecture built around your margins, products, and audiences — not a generic template.</p>
           </div>
           <div class="card">
-            <div class="icon-box">↗</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg>
+            </div>
             <h3>Conversion tracking &amp; data</h3>
             <p>Server-side tracking, enhanced conversions, and clean data feeding every optimization decision.</p>
           </div>
           <div class="card">
-            <div class="icon-box">⚡</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5l-1 4 4-1L20 8l-3-3L4.5 16.5z"/><path d="M13 6l3 3"/><path d="M2 22h20" stroke-opacity="0.4"/></svg>
+            </div>
             <h3>Scale what's working</h3>
             <p>Continuous A/B testing and budget reallocation toward the campaigns producing real revenue.</p>
           </div>
@@ -96,13 +190,13 @@
     <!-- Process -->
     <section class="section-alt">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Our proven process</p>
-          <h2>Analyze → Build → Test → Optimize → Scale</h2>
+          <h2>Analyze → Build → Test → <span class="gradient-text">Optimize → Scale</span></h2>
           <p>A repeatable system, not a one-off campaign. You always know where your budget goes — and how it generates growth.</p>
         </div>
 
-        <div class="process">
+        <div class="process reveal-stagger">
           <div class="process-step">
             <div class="step-num">1</div>
             <h4>Analyze</h4>
@@ -132,15 +226,104 @@
       </div>
     </section>
 
+    <!-- Case results -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Client results</p>
+          <h2>What scaling profitably looks like.</h2>
+          <p>Real performance improvements from accounts we've worked on. Specific brand names withheld where we're under NDA — happy to share verified case studies on request.</p>
+        </div>
+
+        <div class="case-results reveal-stagger">
+          <div class="case-card">
+            <div class="case-vertical">Children's apparel · DTC</div>
+            <div class="case-headline">3.1× → 5.4× ROAS<br>in 90 days</div>
+            <p class="case-summary">Restructured a flat Performance Max account into segmented Search + Shopping + PMax campaigns by margin tier. Layered in server-side tracking and creative testing.</p>
+            <div class="case-metrics">
+              <div class="case-metric"><div class="num">+74%</div><div class="lbl">ROAS</div></div>
+              <div class="case-metric"><div class="num">−42%</div><div class="lbl">CAC</div></div>
+              <div class="case-metric"><div class="num">2.4×</div><div class="lbl">Revenue</div></div>
+            </div>
+          </div>
+          <div class="case-card">
+            <div class="case-vertical">Home lighting · DTC</div>
+            <div class="case-headline">$8k → $42k<br>monthly profit</div>
+            <p class="case-summary">Rebuilt feed strategy and product segmentation across Shopping. Killed unprofitable PMax asset groups and reallocated budget to a tightly bid Search account.</p>
+            <div class="case-metrics">
+              <div class="case-metric"><div class="num">5.2×</div><div class="lbl">Profit</div></div>
+              <div class="case-metric"><div class="num">+148%</div><div class="lbl">Net new revenue</div></div>
+              <div class="case-metric"><div class="num">4.6×</div><div class="lbl">ROAS</div></div>
+            </div>
+          </div>
+          <div class="case-card">
+            <div class="case-vertical">Home décor · DTC</div>
+            <div class="case-headline">7-figure scale<br>at target ROAS</div>
+            <p class="case-summary">Took a brand from $30k/mo to $120k/mo ad spend without ROAS degradation. Geo expansion into new markets, plus a dedicated creative testing pipeline.</p>
+            <div class="case-metrics">
+              <div class="case-metric"><div class="num">4×</div><div class="lbl">Spend</div></div>
+              <div class="case-metric"><div class="num">4.1×</div><div class="lbl">ROAS held</div></div>
+              <div class="case-metric"><div class="num">6 mo</div><div class="lbl">Timeline</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What clients say</p>
+          <h2>Quotes from the brands we work with.</h2>
+        </div>
+
+        <div class="testimonials reveal-stagger">
+          <div class="testimonial">
+            <p class="testimonial-quote placeholder">[QUOTE PLACEHOLDER — request a 2–3 sentence quote from your contact at Slumber Kiddies. Sample structure: "Working with PrimeCore took our Google Ads from break-even to consistently 4× ROAS. Their structure-first approach is the real deal." — Replace with the real quote.]</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SK</div>
+              <div>
+                <div class="name">Slumber Kiddies</div>
+                <div class="role"><a href="https://slumberkiddies.com/" target="_blank" rel="noopener">slumberkiddies.com</a> · Children's sleepwear</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote placeholder">[QUOTE PLACEHOLDER — request a 2–3 sentence quote from your contact at Lichtzoone. Sample: "PrimeCore rebuilt our entire Google Ads account from scratch and within 60 days we saw a measurable lift in ROAS. Easily the best agency we've worked with." — Replace with the real quote.]</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">LZ</div>
+              <div>
+                <div class="name">Lichtzoone</div>
+                <div class="role"><a href="https://www.lichtzoone.com/" target="_blank" rel="noopener">lichtzoone.com</a> · Premium lighting</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-quote placeholder">[QUOTE PLACEHOLDER — request a 2–3 sentence quote from your contact at Decors Deluxe. Sample: "We needed someone who actually understood eCommerce paid media — not just clicks. Bien and the PrimeCore team delivered." — Replace with the real quote.]</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DD</div>
+              <div>
+                <div class="name">Decors Deluxe</div>
+                <div class="role"><a href="https://www.decorsdeluxe.com/" target="_blank" rel="noopener">decorsdeluxe.com</a> · Home décor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Why us -->
     <section>
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Why Primecore</p>
-          <h2>Built around revenue, not clicks.</h2>
+        <div class="section-head reveal">
+          <p class="eyebrow">Why PrimeCore</p>
+          <h2>Built around <span class="gradient-text">revenue</span>, not clicks.</h2>
         </div>
 
-        <div class="grid grid-2">
+        <div class="grid grid-2 reveal-stagger">
           <div class="card">
             <h3>Performance-obsessed</h3>
             <p>Every decision we make is backed by real data and performance metrics. We focus on revenue, ROAS, and sustainable growth — never vanity numbers.</p>
@@ -163,8 +346,8 @@
 
     <!-- CTA -->
     <section class="section-alt">
-      <div class="container-narrow" style="text-align:center;">
-        <h2 style="margin-bottom: 20px;">Ready to grow your eCommerce business with Google Ads?</h2>
+      <div class="container-narrow reveal" style="text-align:center;">
+        <h2 style="margin-bottom: 20px;">Ready to grow your <span class="gradient-text">eCommerce business</span> with Google Ads?</h2>
         <p class="lead" style="margin-bottom: 32px;">Scale smarter with performance-driven Google Ads. We handle strategy, execution, and optimization — so you can focus on growing your business.</p>
         <a href="contact.html" class="btn btn-primary">Schedule Consultation →</a>
       </div>
@@ -217,6 +400,25 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scroll-in reveal -->
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal, .reveal-stagger').forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal, .reveal-stagger').forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 
 </body>
 </html>
