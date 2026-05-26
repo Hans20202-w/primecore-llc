@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Consultation — Primecore LLC</title>
+  <meta name="description" content="Book a free Google Ads consultation with Primecore LLC. We'll audit your account and tell you honestly what we'd change.">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">P</span>
+        Primecore
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta active">Schedule Consultation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Schedule consultation</p>
+        <h1>Ready to grow your<br>eCommerce business?</h1>
+        <p class="lead">Scale smarter with performance-driven Google Ads. We handle strategy, execution, and optimization — so you can focus on growing your business. Share a few details and we'll reply within one business day.</p>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="container">
+        <div class="grid grid-2" style="gap: 80px; align-items: start;">
+
+          <!-- Form -->
+          <form class="form" onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required placeholder="Alex Rivera">
+              </div>
+              <div class="form-field">
+                <label for="store">Store / brand</label>
+                <input type="text" id="store" name="store" placeholder="Acme Apparel">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@yourstore.com">
+            </div>
+
+            <div class="form-field">
+              <label for="website">Store URL</label>
+              <input type="url" id="website" name="website" placeholder="https://yourstore.com">
+            </div>
+
+            <div class="form-field">
+              <label for="spend">Current monthly ad spend</label>
+              <select id="spend" name="spend">
+                <option value="">Select a range</option>
+                <option value="0">Not running ads yet</option>
+                <option value="under-5k">Under $5,000</option>
+                <option value="5-25k">$5,000 – $25,000</option>
+                <option value="25-100k">$25,000 – $100,000</option>
+                <option value="100k+">$100,000+</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">What are you working on?</label>
+              <textarea id="message" name="message" required placeholder="A bit about your store, current results, and what you'd like to improve."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="justify-self: start;">Send message →</button>
+
+            <p id="form-success" style="display:none; color: var(--color-ink); font-size: 15px; padding: 14px 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+              Thanks — we've got your note and will reply within one business day.
+            </p>
+          </form>
+
+          <!-- Contact info -->
+          <aside>
+            <p class="eyebrow">Other ways to reach us</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="label">Email</div>
+                <div class="value"><a href="mailto:hello@primecorellc.com">hello@primecorellc.com</a></div>
+              </div>
+              <div class="contact-item">
+                <div class="label">Response time</div>
+                <div class="value">Within one business day</div>
+              </div>
+              <div class="contact-item">
+                <div class="label">Office</div>
+                <div class="value">Remote-first<br>Working across U.S. &amp; EU time zones</div>
+              </div>
+              <div class="contact-item">
+                <div class="label">Best fit</div>
+                <div class="value">eCommerce stores doing $30k+/mo<br>or ready to start paid acquisition</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <small>© 2026 Primecore LLC. All rights reserved.</small>
+        <ul class="footer-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
