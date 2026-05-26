@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 90" role="img" aria-label="PrimeCore mark">
+  <defs>
+    <linearGradient id="silverFace" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1f4f8"/>
+      <stop offset="35%" stop-color="#c8d0da"/>
+      <stop offset="80%" stop-color="#6e7886"/>
+      <stop offset="100%" stop-color="#4a525d"/>
+    </linearGradient>
+    <linearGradient id="blueFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5fa2f5"/>
+      <stop offset="45%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0a2d8a"/>
+    </linearGradient>
+    <linearGradient id="innerSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Left (silver) face -->
+  <path d="M50 6 L50 86 L6 86 Z" fill="url(#silverFace)"/>
+  <!-- Right (blue) face -->
+  <path d="M50 6 L94 86 L50 86 Z" fill="url(#blueFace)"/>
+  <!-- Top sheen highlight -->
+  <path d="M50 6 L50 30 L36 60 L6 86 Z" fill="url(#innerSheen)" opacity="0.55"/>
+  <!-- Center seam -->
+  <line x1="50" y1="6" x2="50" y2="86" stroke="#0a1729" stroke-width="0.4" opacity="0.35"/>
+</svg>
