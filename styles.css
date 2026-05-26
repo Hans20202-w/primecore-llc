@@ -857,6 +857,16 @@ p.lead {
   color: white;
   letter-spacing: -0.02em;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.founder-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
 }
 
 .founder-info h3 {
@@ -1236,6 +1246,35 @@ p.lead {
   letter-spacing: 0.08em;
 }
 
+.client-logo .logo-img {
+  max-height: 44px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: grayscale(20%);
+  opacity: 0.92;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+.client-logo:hover .logo-img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.client-logo .wordmark-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin-bottom: 10px;
+  display: block;
+  height: 44px;
+  line-height: 44px;
+}
+
 @media (max-width: 720px) {
   .clients-row { grid-template-columns: 1fr; }
 }
@@ -1287,12 +1326,26 @@ p.lead {
 
 .testimonial-quote.placeholder {
   color: var(--color-ink-muted);
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  padding-left: 0;
+}
+
+.testimonial-quote.placeholder::after {
+  content: "Quote pending";
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 10px;
   font-style: normal;
-  padding: 16px;
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-surface);
-  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--color-accent);
+  border-radius: 999px;
+  vertical-align: middle;
 }
 
 .testimonial-author {
@@ -1304,18 +1357,36 @@ p.lead {
 }
 
 .testimonial-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #e8ecf1, #b8c1cc 40%, #2563eb);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 15px;
+  color: var(--color-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 13px;
   flex-shrink: 0;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.testimonial-avatar img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.testimonial-avatar.wordmark {
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  padding: 4px;
+  line-height: 1.05;
+  text-align: center;
 }
 
 .testimonial-author .name {
